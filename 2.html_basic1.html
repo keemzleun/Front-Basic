@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html basic 1</title>
+</head>
+<!-- <body style="background-color: red;"> -->
+<body background="imgs/말하는맹구.png">
+    <h2>글자 styling 예제</h2>     
+    <!-- 인라인 스타일링 -->
+    <p style="background-color: brown;">1. 배경색 변경</p>
+    <p style="color: blue;">2. 글자색 변경</p>
+    <p style="font-size: 20px;">3. 글자 크기 변경</p>
+    <p style="background-color: blue; font-size: 25px; text-align: center;">4. 복합 스타일링</p>
+    
+    <h2>link와 이미지 삽입</h2>
+    <!-- blank : 새탭으로 이동 -->
+    <div><a href="https://naver.com" target="_blank">네이버</a></div>
+    
+    <div>
+        <a href="https://naver.com" target="_blank">
+            <!-- alt : 이미지가 깨졌을 때 대체 문자열, 시각 장애인용 reader에서 인식 -->
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MTJfMTMx%2FMDAxNzE1NDg4OTQwOTgw.Bk1EARHhL66DHardfXSNe2wxahvLGM5dWm8zEZU5roAg.5ePjv9x-Yc88-6xurLTVxKM3lnn4bjOE-44mwsSI75og.JPEG%2FIMG_1423.JPG&type=sc960_832" width="320px" height="200px" style="border: 30px solid black;" alt="쿠리만쥬의 개쩌는 등산">
+        </a>
+    </div>
+    
+    <h2>리스트(ol: 순서가 있는, ul: 순서가 없는)</h2>
+    <ol style="list-style-type: upper-roman;">
+        <li>아이템A</li>
+        <li>아이템B</li>
+        <li>아이템C</li>
+    </ol>
+    <ul style="list-style-type: square;">
+        <li>아이템A</li>
+        <li>아이템B</li>
+        <li>아이템C</li>
+    </ul>
+
+    <h2>테이블 예제</h2>
+    <table border="1" style="border-collapse: collapse;">
+        <caption>테이블명</caption>
+        <thead>
+            <tr>
+                <th>컬럼1</th>
+                <th>컬럼2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+            </tr>
+            <tr>
+                <td>내용A</td>
+                <td>내용B</td>
+            </tr>
+        </tbody>
+    </table>
+ 
+    <!-- 테이블 만들기 실습 -->
+    <!-- 테이블명은 post : id, title, contents, author_email 요소와 데이터를 가진 테이블 생성 -->
+    <table border="1" style="border-collapse: collapse;">
+        <caption>테이블명</caption>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>contents</th>
+                <th>author_email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>안녕하세요</td>
+                <td>안녕히계세요</td>
+                <td>123@naver.com</td>
+            </tr>
+            <tr>
+                <td>내용A</td>
+                <td>내용B</td>
+                <td>내용2</td>
+                <td>내용2</td>
+            </tr>
+        </tbody>
+    </table>
+ 
+</body>
+</html>

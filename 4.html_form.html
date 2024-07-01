@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>글 작성하기</h2>
+    <form action="post" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" id="title">
+        
+        </div>
+        <div>
+            <label for="resume">내용</label><br>
+            <textarea id="resume" name="resume" cols="30" rows="10" maxlength="10" placeholder="내용을 입력하세요."></textarea>
+        </div>
+        <div>
+            <label for="reservation">예약</label>
+            <input type="radio" id="reservation" name="reservation" value="yes">YES
+            <input type="radio" id="reservation" name="reservation" value="no">NO
+        </div>
+        
+    </form>
+</body>
+</html>
