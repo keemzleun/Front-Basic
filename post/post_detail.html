@@ -25,7 +25,6 @@
         async function serverData(){
             const postId = document.getElementById("postId").value;
             const response1 = await axios.get("http://localhost:8081/post/detail/"+postId);
-            
             document.getElementById("id").innerHTML=response1.data.id;
             document.getElementById("title").innerHTML=response1.data.title;
             document.getElementById("contents").innerHTML=response1.data.contents;
