@@ -47,16 +47,8 @@
                 const password = document.getElementById('password').value;
                 const role = document.getElementById('role').value;
 
-                
-                //title=hong&contents=hong is...
-                const formData = new FormData();
-                formData.append('name', name);
-                formData.append('email', email);
-                formData.append('password', password);
-                formData.append('role', role);
-
                 try{
-                    const response = await axios.post('http://localhost:8081/author/register2', formData);
+                    const response = await axios.post('http://localhost:8081/author/register2', {name:name, email:email, password:password, role:role});
                     console.log(response.data);
                 } catch(e){
                     console.log(e.message);
