@@ -29,7 +29,7 @@
     <script>
         async function serverData(){
         
-            const response1 = await axios.get("http://localhost:8081/post/list");
+            const response1 = await axios.get("http://ec2-18-117-105-228.us-east-2.compute.amazonaws.com:8081/post/list");
             const allData = response1.data;
             let bodyData = document.getElementById("bodyData");
             for(let i=0; i<=allData.length; i++){

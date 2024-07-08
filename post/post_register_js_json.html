@@ -8,7 +8,7 @@
 
 </head>
 <body>
-   <object style="width:100%;" data="header.html" type="text/html"></object>
+   <object style="width:100%;" data="/common/header.html" type="text/html"></object>
    <div class="container">
         <div class="page-header"><h3>글쓰기</h3></div>
         <form id="postForm">
@@ -32,7 +32,7 @@
                 const contents = document.getElementById("contents").value;
 
                 try {
-                    const response = await axios.post('http://localhost:8081/post/register1',
+                    const response = await axios.post('http://ec2-18-117-105-228.us-east-2.compute.amazonaws.com:8081/post/register1',
                         {title:title, contents:contents}
                     )
                     console.log(response.data);
